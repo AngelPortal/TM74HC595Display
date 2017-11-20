@@ -12,7 +12,7 @@
 #include "TM74HC595Display.h"
 #include <Arduino.h>
 
-unsigned char _LED_0F[57];
+unsigned char _LED_0F[58];
 
 TM74HC595Display::TM74HC595Display(int SCLK, int RCLK, int DIO)
 {
@@ -44,43 +44,44 @@ TM74HC595Display::TM74HC595Display(int SCLK, int RCLK, int DIO)
   _LED_0F[17] = 0x89; //H
   _LED_0F[18] = 0xF9; //I
   _LED_0F[19] = 0xF1; //J
-  _LED_0F[20] = 0xC3; //L
-  _LED_0F[21] = 0xA9; //n
+  _LED_0F[20] = 0xC7; //L
+  _LED_0F[21] = 0xAB; //n
   _LED_0F[22] = 0xC0; //O
   _LED_0F[23] = 0x8C; //P
   _LED_0F[24] = 0x98; //q
   _LED_0F[25] = 0x92; //S
   _LED_0F[26] = 0xC1; //U
   _LED_0F[27] = 0x91; //Y
-  _LED_0F[28] = 0xFE; //-
-  _LED_0F[30] = 0x40; //0.
-  _LED_0F[31] = 0x79; //1.
-  _LED_0F[32] = 0x24; //2.
-  _LED_0F[33] = 0x30; //3.
-  _LED_0F[34] = 0x99; //4.
-  _LED_0F[35] = 0x92; //5.
-  _LED_0F[36] = 0x82; //6.
-  _LED_0F[37] = 0xF8; //7.
-  _LED_0F[38] = 0x80; //8.
-  _LED_0F[39] = 0x90; //9.
-  _LED_0F[40] = 0x88; //A.
-  _LED_0F[41] = 0x83; //b.
-  _LED_0F[42] = 0xC6; //C.
-  _LED_0F[43] = 0xA1; //d.
-  _LED_0F[44] = 0x86; //E.
-  _LED_0F[45] = 0x8E; //F.
-  _LED_0F[46] = 0xC2; //G.
-  _LED_0F[47] = 0x89; //H.
-  _LED_0F[48] = 0xF9; //I.
-  _LED_0F[49] = 0xF1; //J.
-  _LED_0F[50] = 0xC3; //L.
-  _LED_0F[51] = 0xA9; //n.
-  _LED_0F[52] = 0xC0; //O.
-  _LED_0F[53] = 0x8C; //P.
-  _LED_0F[54] = 0x98; //q.
-  _LED_0F[55] = 0x92; //S.
-  _LED_0F[56] = 0xC1; //U
-  _LED_0F[57] = 0x91; //Y.
+  _LED_0F[28] = 0xBF; //-
+  _LED_0F[29] = 0x40; //0.
+  _LED_0F[30] = 0x79; //1.
+  _LED_0F[31] = 0x24; //2.
+  _LED_0F[32] = 0x30; //3.
+  _LED_0F[33] = 0x19; //4.
+  _LED_0F[34] = 0x12; //5.
+  _LED_0F[35] = 0x02; //6.
+  _LED_0F[36] = 0x78; //7.
+  _LED_0F[37] = 0x00; //8.
+  _LED_0F[38] = 0x10; //9.
+  _LED_0F[39] = 0x08; //A.
+  _LED_0F[40] = 0x03; //b.
+  _LED_0F[41] = 0x46; //C.
+  _LED_0F[42] = 0x21; //d.
+  _LED_0F[43] = 0x06; //E.
+  _LED_0F[44] = 0x0E; //F.
+  _LED_0F[45] = 0x42; //G.
+  _LED_0F[46] = 0x09; //H.
+  _LED_0F[47] = 0x79; //I.
+  _LED_0F[48] = 0x61; //J.
+  _LED_0F[40] = 0x47; //L.
+  _LED_0F[50] = 0x2B; //n.
+  _LED_0F[51] = 0x40; //O.
+  _LED_0F[52] = 0x0C; //P.
+  _LED_0F[53] = 0x18; //q.
+  _LED_0F[54] = 0x12; //S.
+  _LED_0F[55] = 0x41; //U
+  _LED_0F[56] = 0x11; //Y.
+  _LED_0F[57] = 0x7f; //.
 }
 
 

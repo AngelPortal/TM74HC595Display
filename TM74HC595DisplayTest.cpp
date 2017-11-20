@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-	  int i = 20;
+	  int i = 54;
 	  disp.send(disp.LED_0F[i], 0b0001);      //send digital "0." to 1st indicator
 	  disp.send(disp.LED_0F[i + 1], 0b0010);  //send digital "1." to 1st indicator
 	  disp.send(disp.LED_0F[i + 2], 0b0100);  //send digital "2." to 1st indicator
